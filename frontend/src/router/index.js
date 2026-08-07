@@ -5,6 +5,7 @@ import SimulationView from '../views/SimulationView.vue'
 import SimulationRunView from '../views/SimulationRunView.vue'
 import ReportView from '../views/ReportView.vue'
 import InteractionView from '../views/InteractionView.vue'
+import AnalystView from '../views/AnalystView.vue'
 
 const routes = [
   {
@@ -41,6 +42,12 @@ const routes = [
     name: 'Interaction',
     component: InteractionView,
     props: true
+  },
+  {
+    path: '/analyst',
+    name: 'Analyst',
+    component: AnalystView,
+    alias: ['/analyst_fish', '/mirofish/analyst_fish']
   }
 ]
 
